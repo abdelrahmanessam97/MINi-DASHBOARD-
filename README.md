@@ -2,6 +2,44 @@
 
 A modern, responsive dashboard application built with Nuxt 3, Tailwind CSS, and custom shadcn-vue components.
 
+## Task Description
+
+This project is a single-page, responsive dashboard application built with Nuxt 3, Tailwind CSS, and shadcn-vue components.
+
+It includes the following features:
+
+### 1. Header
+
+- Built using the `Navbar` component from shadcn-vue
+- Left: logo placeholder
+- Right: user avatar
+- Dark/light theme toggle using shadcn-vue’s switch component
+
+### 2. Sidebar Navigation
+
+- Collapsible on smaller screens
+- Menu items:
+  - Dashboard
+  - Reports
+  - Settings
+- Built with `NavigationMenu` or a custom sidebar using shadcn-vue primitives
+
+### 3. Main Content
+
+- **Stats Cards**: Key metrics like total users and active users using dummy data
+- **Chart Placeholder**: Box section to later hold a chart (no real charting logic included)
+- **Recent Activity List**: List showing 5 recent user or system events with timestamps
+
+### 4. Settings Modal
+
+- Opens on "Settings" click in sidebar or top navigation
+- Implemented using shadcn-vue `Dialog` or `Sheet`
+- Includes:
+  - Username input
+  - Email input
+  - Notification toggle switch
+- Cancel and Save buttons to close or confirm
+
 ## Features
 
 - 🎨 **Modern UI**: Clean, professional design with shadcn-vue inspired components
@@ -22,7 +60,6 @@ A modern, responsive dashboard application built with Nuxt 3, Tailwind CSS, and 
 ### Pages
 
 - `pages/index.vue` - Dashboard home with stats and activity
-- `pages/reports.vue` - Reports page with different report types
 
 ### Key Features
 
@@ -68,20 +105,29 @@ npm run preview
 
 ## Responsive Design
 
-- **Mobile (< 768px)**: Sidebar becomes hamburger menu, cards stack vertically
-- **Tablet (768px - 1024px)**: Sidebar remains collapsible, cards in 2-column grid
-- **Desktop (> 1024px)**: Full sidebar always visible, cards in 4-column grid
+- **Mobile**: Sidebar becomes hamburger menu, cards stack vertically
+- **Tablet**: Sidebar remains collapsible, cards in 2-column grid
+- **Desktop**: Full sidebar always visible, cards in 4-column grid
 
 ## Custom Components
 
 The project includes custom shadcn-vue style components:
 
+- `avater` - Avatar component with rounded corners
+- `breadcrumb` - Breadcrumb navigation
 - `Button` - Versatile button with multiple variants
 - `Card` - Container component with header, content, and title
+- `chart` - Reusable chart component
+- `collapsible` - Collapsible component for sidebar and settings
 - `Dialog` - Modal component for settings and interactions
 - `Input` - Form input with consistent styling
-- `Switch` - Toggle switch for settings
 - `Label` - Form labels with proper accessibility
+- `Switch` - Toggle switch for settings
+- `select` - Form select with consistent styling
+- `skeleton` - Placeholder component for loading states
+- `sidebar` - Sidebar component with collapsible and responsive design
+- `switch` - Toggle switch for settings
+- `tooltip` - Tooltip component with proper accessibility
 
 ## Development Notes
 
