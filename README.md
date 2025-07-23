@@ -3,6 +3,7 @@
 A modern, responsive dashboard application built with Nuxt 3, Tailwind CSS, and custom shadcn-vue components.
 
 ![MiniDashboard Light](./public/screenshots/mini-dashboard-light.jpg)
+
 ![MiniDashboard Dark](./public/screenshots/mini-dashboard-dark.jpg)
 
 
